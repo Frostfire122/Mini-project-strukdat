@@ -4,7 +4,7 @@
 Farras Al Ghifari - 5025251006
 ## Stack 
 
-" char stack[MAX][50]; int top = -1; ".
+ char stack[MAX][50]; int top = -1; 
 
 ### Explanation
 
@@ -12,7 +12,7 @@ The declaration for stack.
 
 ## Queue
 
-" char queue[MAX][50]; int front = 0, rear = -1; ".
+ char queue[MAX][50]; int front = 0, rear = -1; 
 
 ### Explanation
 
@@ -20,7 +20,7 @@ The declaration for queue.
 
 ## Deque
 
-" char deque[MAX][50]; int dfront = -1, drear = -1; ".
+ char deque[MAX][50]; int dfront = -1, drear = -1; 
 
 ### Explanation
 
@@ -28,7 +28,7 @@ The declaration for Deque
 
 ## Stack function
 
-" void push() {
+ void push() {
     if (top == MAX - 1) {
         printf("Stack full!\n");
         return;
@@ -45,7 +45,7 @@ void pop() {
         return;
     }
     printf("Removed: %s\n", stack[top--]);
-} "
+} 
 
 ### Explanation
 
@@ -53,7 +53,7 @@ The push() function adds a new string to the stack: it first checks whether the 
 
 ## Queue function
 
-" void enqueue() {
+ void enqueue() {
     if (rear == MAX - 1) {
         printf("Queue full!\n");
         return;
@@ -70,7 +70,7 @@ void dequeue() {
         return;
     }
     printf("Removed: %s\n", queue[front++]);
-} "
+} 
 
 ### Explanation
 
@@ -78,7 +78,7 @@ The enqueue() function adds a new item to the back of the queue: it first checks
 
 ## Deque Function
 
-" void insertFront() {
+ void insertFront() {
     if (dfront == 0 && drear == MAX - 1) {
         printf("Deque full!\n");
         return;
@@ -138,7 +138,7 @@ void deleteRear() {
     } else {
         drear--;
     }
-} "
+}
 
 ### Explanation
 
@@ -146,7 +146,7 @@ The insertFront() function adds a new item to the front of the deque by decreasi
 
 ## Showing the list Function
 
-" void showAll() {
+ void showAll() {
     printf("\nStack: ");
     for (int i = 0; i <= top; i++) printf("%s ", stack[i]);
 
@@ -157,7 +157,7 @@ The insertFront() function adds a new item to the front of the deque by decreasi
     for (int i = dfront; i <= drear && dfront != -1; i++) printf("%s ", deque[i]);
 
     printf("\n");
-} "
+}
 
 ### Explanation 
 
@@ -165,7 +165,7 @@ It first prints the stack by looping from index 0 up to top, showing all items i
 
 ## Main
 
-" int main() {
+ int main() {
     char choice[20];
 
     while (1) {
@@ -187,7 +187,7 @@ It first prints the stack by looping from index 0 up to top, showing all items i
     }
 
     return 0;
-} "
+} 
 
 ### Explanation
 
