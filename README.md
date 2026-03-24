@@ -1,6 +1,6 @@
-#Open the file Miniproject.c with a C code editor/runner in order to run the program
+# Open the file Miniproject.c with a C code editor/runner in order to run the program
 
-#Full code explanation
+# Full code explanation
 Farras Al Ghifari - 5025251006
 ## Stack 
 
